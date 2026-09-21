@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rutinitasku</title>
+</head>
+<body>
+    <header>
+    <h1>Rutinitas Pagi saya</h1>
+    <nav aria-label="Navigasi utama">
+      <ul>
+        <li><a href="#bagian-1">Rutinitas pagi</a></li>
+        <li><a href="#bagian-2"> Tambah rutinitas</a></li>
+        <li><a href="#bagian-3">About me</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="bagian-1">
+      <h2>Rutinitas Pagi</h2>
+      <table>
+  <caption>Judul tabel Anda</caption>
+  <thead>
+    <tr>
+      <th scope="col">No </th>
+      <th scope="col">Jenis kegiatan </th>
+      <th scope="col">Durasi </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>gym</td>
+      <td>1 jam</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>sarapan</td>      
+      <td>30 menit</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>persiapan kuliah</td>
+      <td>jam 8</td>
+    </tr>
+    <!-- tambahkan minimal dua baris lagi -->
+  </tbody>
+</table>
+      <!-- tabel Anda nanti di sini (Lembar D) -->
+      </section>
+      <section id="bagian-2">
+      <h2>Tambah Rutinitas</h2>
+      <form action="/simpan" method="post">
+    <p>
+      <label for="nama-kolom">Jenis olahraga</label>
+      <input type="text" id="nama-kolom" name="nama-kolom" required>
+    </p>
+    <p>
+      <label for="waktu">Waktu</label>
+      <input type="time" id="waktu" name="waktu" required>
+    </p>
+    <p>
+      <label for="Durasi">Durasi</label>
+      <input type="text" id="Durasi" name="Durasi" required>
+    </p>
+    <!-- tambahkan minimal dua kolom lagi -->
+    <button type="submit">Simpan</button>
+  </form>
+      <!-- form Anda nanti di sini (Lembar E) -->
+    </section>
+    <section id="bagian-3">
+      <h2>About Me</h2>
+      <p>Ini adalah bagian tentang saya.</p>
+    </section>
+  </main>
+  <figure>
+  <img src="foto.png"
+       alt="___jelaskan isi gambar dalam satu kalimat___"
+       width="360" height="360" loading="lazy">
+  <figcaption>contoh rutinitas saya dipagi hari</figcaption>
+</figure>
+
+  <footer>
+    <p>Zerga Naufal Arkaan · 25523231 · 2026</p>
+  </footer>
+</body>
+</body>
+</html>
+<!DOCTYPE html>
+<!--
+  KERANGKA AWAL — Halaman Profil Saya
+  PABW 2026/2027 · Pertemuan 3
+
+  Cara pakai:
+  1. Salin berkas ini, ganti nama menjadi profil.html
+  2. Ganti setiap tulisan TODO dengan isi milik Anda SENDIRI
+  3. Simpan, lalu buka di peramban (F5 untuk memuat ulang)
+  4. Kerjakan berurutan mengikuti Lembar B, C, D, dan E pada worksheet
+
+  Jangan menghapus komentar TODO sebelum bagian itu Anda kerjakan —
+  komentar itu adalah daftar periksa Anda sendiri.
+-->
+
+  
+  <!-- TODO C.1: buat <header> di sini.
+       Isinya: satu <h1> berisi judul halaman Anda.
+       Di dalamnya juga ada <nav> berisi 3 tautan ke bagian halaman. -->
+
+  <!-- TODO C.2: buat <main> di sini sebagai pembungkus semua bagian isi.
+       Di dalamnya ada 2 <section>, masing-masing punya <h2> sendiri. -->
+
+    <!-- TODO D.1: di dalam section pertama, buat tabel data Anda.
+         Wajib ada: <caption>, <thead>, <th scope="col">, dan minimal 3 baris data. -->
+
+    <!-- TODO E.1: di dalam section kedua, buat form Anda.
+         Wajib ada: minimal 3 kolom, setiap kolom punya <label for> yang
+         cocok dengan id input-nya, dan satu atribut validasi. -->
+
+  <!-- TODO C.3: buat <footer> di sini.
+       Isinya: nama Anda, NIM Anda, dan tahun. -->
+
+</body>
+</html>
