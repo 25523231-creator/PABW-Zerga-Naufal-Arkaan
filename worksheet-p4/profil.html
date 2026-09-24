@@ -4,25 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jadwal Olahraga</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tokens.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="komponen.css">
+    <link rel="stylesheet" href="tema.css">
 </head>
 <body>
     <header>
-    <h1>Jadwal Olahraga Saya</h1>
-    <nav aria-label="Navigasi utama">
-      <ul>
-        <li><a href="#bagian-1">Jadwal Olahraga</a></li>
-        <li><a href="#bagian-2"> Tambah Olahraga</a></li>
-        <li><a href="#bagian-3">Target Olahraga</a></li>
-      </ul>
-    </nav>
-  </header> 
-  <main>
-    <section id="bagian-1">
-      <h2>Jadwal Olahraga</h2>
-      <table>
-        <caption>Jadwal Olahraga</caption>
-        <thead>
+      <input type="checkbox" id="tema" class="pengalih-tema">
+      <label for="tema" class="tombol-tema">Tema gelap</label>
+      <h1>Jadwal Olahraga Saya</h1>
+      <nav aria-label="Navigasi utama">
+        <ul>
+          <li><a href="#bagian-1">Jadwal Olahraga</a></li>
+          <li><a href="#bagian-2"> Tambah Olahraga</a></li>
+          <li><a href="#bagian-3">Target Olahraga</a></li>
+        </ul>
+      </nav>
+    </header> 
+    <main>
+      <section id="bagian-1">
+        <h2>Jadwal Olahraga</h2>
+        <table>
+          <caption>Jadwal Olahraga</caption>
+          <thead>
             <tr>
               <th scope="col">Jenis olahraga </th>
               <th scope="col">Waktu </th>
@@ -30,53 +36,52 @@
             </tr>
           </thead>
           <tbody>
-          <tr>
-            <td scope="row">gym</td>
-            <td>pagi</td>
-            <td>1 jam</td>
-          </tr>
-          <tr>
-            <td scope="row">push up</td>
-            <td>siang</td>
-            <td>30 menit</td>
-          </tr>
-          <tr>
-            <td scope="row">Lari</td>
-            <td>malam</td>
-            <td>1 jam</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-    <section id="bagian-2">
-      <h2>Tambah Olahraga</h2>
-      <form action="/simpan" method="post">
-        <p>
-        <label for="nama-kolom">Jenis olahraga</label>
-        <input type="text" id="nama-kolom" name="nama-kolom" required>
-      </p>
-      <p>
-        <label for="waktu">Waktu</label>
-        <input type="time" id="waktu" name="waktu" required>
-      </p>
-      <p>
-        <label for="Durasi">Durasi</label>
-        <input type="text" id="Durasi" name="Durasi" required>
-      </p>
-      <button id="submit" type="submit">Simpan</button>
-    </form>
-    </section>
-    <section id="bag ian-3">
-      <h2>Target Olahraga</h2>
-      <p>ingin menjadi atlet olahraga.</p>
-    </section>
-  </main>
-  <figure>
-  <img src="poto.png" alt="___jelaskan isi gambar dalam satu kalimat___" width="360" height="360" loading="lazy">
-  <figcaption>contoh gambar olahraga</figcaption>
-</figure>
-
-  <footer>
-    <p>Zerga Naufal Arkaan · 25523231 · 2026</p>
-  </footer>
+            <tr>
+              <td scope="row">gym</td>
+              <td>pagi</td>
+              <td>1 jam</td>
+            </tr>
+            <tr>
+              <td scope="row">push up</td>
+              <td>siang</td>
+              <td>30 menit</td>
+            </tr>
+            <tr>
+              <td scope="row">Lari</td>
+              <td>malam</td>
+              <td>1 jam</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="bagian-2">
+        <h2>Tambah Olahraga</h2>
+        <form action="/simpan" method="post">
+          <p>
+            <label for="nama-kolom">Jenis olahraga</label>
+            <input type="text" id="nama-kolom" name="nama-kolom" required>
+          </p>
+          <p>
+            <label for="waktu">Waktu</label>
+            <input type="time" id="waktu" name="waktu" required>
+          </p>
+          <p>
+          <label for="Durasi">Durasi</label>
+          <input type="text" id="Durasi" name="Durasi" required>
+          </p>
+          <button id="submit" type="submit">Simpan</button>
+        </form>
+      </section>
+      <section id="bag ian-3">
+        <h2>Target Olahraga</h2>
+        <p>ingin menjadi atlet olahraga.</p>
+      </section>
+    </main>
+    <figure>
+      <img src="poto.png" alt="___jelaskan isi gambar dalam satu kalimat___" width="360" height="360" loading="lazy">
+      <figcaption>contoh gambar olahraga</figcaption>
+    </figure>
+    <footer>
+      <p>Zerga Naufal Arkaan · 25523231 · 2026</p>
+    </footer>
 </body>
