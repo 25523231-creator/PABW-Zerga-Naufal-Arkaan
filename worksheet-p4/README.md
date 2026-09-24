@@ -1,7 +1,6 @@
 ## Pertemuan 4 — Design Token Halaman Profil
 
 * Berkas gaya yang akan dibuat: `tokens.css`, `base.css`, `layout.css`, `komponen.css`, `tema.css`.
-* Tema: Biru modern.
 * Warna utama: `#1D3A8C`, dipilih karena memberikan tampilan profesional dan konsisten pada halaman profil.
 
 ### Token yang saya tetapkan

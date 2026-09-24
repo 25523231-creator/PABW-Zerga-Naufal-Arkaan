@@ -11,9 +11,9 @@
     --shadow-1:      0 1px 3px rgba(0, 0, 0, .45);
   }
 }
-/*<!-- taruh di dalam <header>, sebelum judul -->
-/*<input type="checkbox" id="tema" class="pengalih-tema">
-/*<label for="tema" class="tombol-tema">Tema gelap</label>
+
+<input type="checkbox" id="tema" class="pengalih-tema">
+<label for="tema" class="tombol-tema">Tema gelap</label>
  
 /* CSS */
 .pengalih-tema { position: absolute; opacity: 0; pointer-events: none; }
