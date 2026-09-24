@@ -1,19 +1,31 @@
-# Pertemuan 3 — HTML5 Semantik, Form, Media & Aksesibilitas
+## Rencana Halaman Profil
 
-## Rencana Halaman
-**Judul:** Rutinitas Pagi Saya
-**Deskripsi:** Halaman yang menceritakan rutinitas pagi yang saya lakukan.
+### Jadwal dan Target Olahraga Saya
 
-### Navigasi
-1. Rutinitas Pagi
-2. Tambah Rutinitas
-3. About Me
+Halaman ini menampilkan jadwal olahraga dan target olahraga yang ingin saya capai.
 
-### Bagian Halaman
-1. Rutinitas Pagi
-2. Tambah Rutinitas
-3. About Me
+- Tautan navigasi:
+  1. Jadwal Olahraga
+  2. tambah Olahraga
+  3. target Target
 
-## Pengungkapan AI
+- Bagian utama:
+  1. Jadwal Olahraga
+  2. Target durasi
 
-Saya menggunakan AI hanya untuk mencari tahu apa yang saya tidak ketahui saja
+- Kolom tabel:
+  - Jenis olahraga
+  - Waktu
+  - Durasi
+
+- Kolom form:
+  - Jenis olahraga
+  - Tanggal
+  - Durasi
+
+- Nama berkas gambar:
+  - foto.png
+
+### Perubahan Rencana
+
+Topik halaman diubah dari "Rutinitas Pagi Saya" menjadi "Jadwal dan Target Olahraga Saya" agar halaman lebih fokus pada jadwal dan target olahraga.
