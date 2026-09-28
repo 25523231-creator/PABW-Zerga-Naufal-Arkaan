@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jadwal Olahraga</title>
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="komponen.css">
+  <link rel="stylesheet" href="tema.css">
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="header-baris">
+        <div>
+          <input type="checkbox" id="tema" class="pengalih-tema">
+          <label for="tema" class="tombol-tema">Tema gelap</label>
+          <h1>Jadwal Olahraga Saya</h1>
+        </div>
+        <nav aria-label="Navigasi utama">
+          <ul class="navbar">
+            <li><a href="#bagian-1">Jadwal Olahraga</a></li>
+            <li><a href="#bagian-2">Tambah Olahraga</a></li>
+            <li><a href="#bagian-3">Target Olahraga</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header> 
+    <main class="isi">
+      <aside class="sisi">
+        <h2>Menu</h2>
+        <ul>
+          <li><a href="#bagian-1">Jadwal Olahraga</a></li>
+          <li><a href="#bagian-2">Tambah Olahraga</a></li>
+          <li><a href="#bagian-3">Target Olahraga</a></li>
+        </ul>
+      </aside>
+      <div class="utama">
+        <div class="galeri">
+          <section id="bagian-1" class="kartu sorotan">
+            <h2>Jadwal Olahraga</h2>
+            <table>
+              <caption>Jadwal Olahraga Mingguan</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Jenis olahraga</th>
+                  <th scope="col">Waktu</th>
+                  <th scope="col">Durasi</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Gym</td>
+                  <td>Pagi</td>
+                  <td>1 jam</td>
+                </tr>
+                <tr>
+                  <td>Push up</td>
+                  <td>Siang</td>
+                  <td>30 menit</td>
+                </tr>
+                <tr>
+                  <td>Lari</td>
+                  <td>Malam</td>
+                  <td>1 jam</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <section id="bagian-2" class="kartu">
+            <h2>Tambah Olahraga</h2>
+            <form action="/simpan" method="post" class="form-olahraga">
+              <div class="form-kolom">
+                <label for="nama-kolom">Jenis olahraga</label>
+                <input type="text" id="nama-kolom" name="nama-kolom">
+              </div>
+              <div class="form-kolom">
+                <label for="waktu">Waktu</label>
+                <input type="time" id="waktu" name="waktu" required>
+              </div>
+              <div class="form-kolom">
+                <label for="Durasi">Durasi</label>
+                <input type="text" id="Durasi" name="Durasi">
+              </div>
+              <button id="submit" type="submit">Simpan</button>
+            </form>
+          </section>
+          <section id="bagian-3" class="kartu">
+            <h2>Target Olahraga</h2>
+            <div class="kartu__isi">
+              <p>Ingin menjadi atlet olahraga professional dan menjaga kebugaran tubuh.</p>
+            </div>
+          </section>
+          <figure class="kartu">
+            <img src="foto.png" alt="Seseorang sedang berlari di jalan raya saat pagi hari" loading="lazy">
+            <figcaption class="kartu__isi">Contoh kegiatan olahraga lari pagi</figcaption>
+          </figure>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Zerga Naufal Arkaan · 25523231 · 2026</p>
+    </footer>
+  </div>
+</body>
+</html>
