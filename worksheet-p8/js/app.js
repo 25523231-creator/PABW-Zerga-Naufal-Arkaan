@@ -61,5 +61,9 @@ console.log(profil.nama);
 const nilaiInput = "3";
 console.log(nilaiInput + 1);
 
-const elemen = document.querySelector("#tidak-ada");
-elemen.textContent = "tes";
+const elemen = document.querySelector("header");
+if (!elemen) {
+  console.error("elemen header tidak ditemukan") 
+}else {
+  console.log(elemen);
+}
