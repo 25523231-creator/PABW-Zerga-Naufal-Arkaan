@@ -3,12 +3,12 @@ const profil = {
   peran: "Mahasiswa Informatika",
   keahlian: ["HTML", "CSS", "JavaScript"],
 };
-
-const jumlahProyek = 1;
+  
+const jumlahProyek = 2;
 
 let pilihanAktif = "semua";
 
-const kalimat = `Zerga Naufal Arkaan ${profil.Zerga}, dan saya belajar ${profil.keahlian.length} hal.`;
+const kalimat = `Nama saya ${profil.nama}, dan saya belajar ${profil.keahlian.length} hal.`;
 console.log(kalimat);
 
 console.log(typeof profil.nama);
@@ -59,7 +59,7 @@ console.table(daftarProyek);
 console.log(profil.nama);
 
 const nilaiInput = "3";
-console.log(nilaiInput + 1);
+console.log(Number(nilaiInput) + 1);
 
 const elemen = document.querySelector("header");
 if (!elemen) {
