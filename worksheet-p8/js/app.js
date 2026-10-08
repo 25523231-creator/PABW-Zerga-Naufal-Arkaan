@@ -55,3 +55,11 @@ console.log(judulProyek);
 const urut = [...daftarProyek].sort((a, b) => a.judul.localeCompare(b.judul));
 console.table(urut);
 console.table(daftarProyek);
+
+console.log(profil.nama);
+
+const nilaiInput = "3";
+console.log(nilaiInput + 1);
+
+const elemen = document.querySelector("#tidak-ada");
+elemen.textContent = "tes";
