@@ -34,3 +34,24 @@ console.log(formatKeahlian(profil.keahlian));
 console.log(buatPerkenalan ({ nama: "Zerga", peran: "Mahasiswa"}));
 console.log(formatKeahlian (["HTML", "CSS"]));
 console.log(formatKeahlian (["JavaScript"]));
+
+const daftarProyek = [
+  { judul: "Halaman Profil", tahun: 2026, selesai: true },
+  { judul: "Katalog Produk", tahun: 2026, selesai: false },
+];
+
+console.table(profil.keahlian);
+console.table(daftarProyek);
+
+const selesai = daftarProyek.filter((proyek) => proyek.selesai);
+console.table(selesai);
+
+const katalog = daftarProyek.find((proyek) => proyek.judul === "Katalog Produk");
+console.log(katalog);
+
+const judulProyek = daftarProyek.map((proyek) => proyek.judul);
+console.log(judulProyek);
+
+const urut = [...daftarProyek].sort((a, b) => a.judul.localeCompare(b.judul));
+console.table(urut);
+console.table(daftarProyek);
