@@ -1,0 +1,100 @@
+.page {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100dvh;
+}
+
+header {
+  padding-block: var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.header-baris {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+nav ul {
+  display: flex;
+  gap: var(--space-4);
+  list-style: none;
+  padding: 0;
+}
+
+nav a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+nav a:hover { 
+  text-decoration: underline; 
+}
+
+.navbar {
+  display: flex;
+  gap: var(--space-4);
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--section-gap);
+  padding-block: var(--space-6);
+}
+
+.isi {
+  display: grid;
+  grid-template-columns: 16rem 1fr;
+  gap: var(--space-6);
+}
+
+.sisi {
+  grid-column: 1;
+}
+
+.utama {
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+.katalog {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: var(--space-4);
+}
+
+.kartu {
+  min-width: 0;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-1);
+  padding: var(--card-pad);
+}
+
+.sorotan { grid-column: span 2; }
+.papan    { grid-row: span 2; }
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.kartu__judul, h1, h2, h3, p {
+  overflow-wrap: anywhere;
+}
+
+footer {  
+  padding-block: var(--space-4);
+  border-top: 1px solid var(--color-border);
+  color: var(--color-fg);
+  font-size: var(--text-sm);
+}
