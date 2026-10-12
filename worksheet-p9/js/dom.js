@@ -16,9 +16,7 @@ function buatKartu(proyek) {
   return li;
 }
 
-render(daftarProyek);
-
-/*daftarProyek.forEach((proyek) => wadah.append(buatKartu(proyek)));*/
+daftarProyek.forEach((proyek) => wadah.append(buatKartu(proyek)));  
 
 const barisFilter = document.querySelector("#filter");
 
