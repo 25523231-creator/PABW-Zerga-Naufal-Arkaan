@@ -35,9 +35,9 @@ console.log(buatPerkenalan ({ nama: "Zerga", peran: "Mahasiswa"}));
 console.log(formatKeahlian (["HTML", "CSS"]));
 console.log(formatKeahlian (["JavaScript"]));
 
-export const daftarProyek = [
-  { judul: "Halaman Profil", tahun: 2026, selesai: true, kategori: "web" },
-  { judul: "Katalog Produk", tahun: 2026, selesai: false, kategori: "app" },
+const daftarProyek = [
+  { judul: "Halaman Profil", tahun: 2026, selesai: true },
+  { judul: "Katalog Produk", tahun: 2026, selesai: false },
 ];
 
 console.table(profil.keahlian);

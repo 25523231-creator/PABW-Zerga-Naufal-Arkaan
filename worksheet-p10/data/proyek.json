@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "judul": "Program Lari & Marathon 10K",
+    "tahun": 2026,
+    "kategori": "lari"
+  },
+  {
+    "id": 2,
+    "judul": "Gym rutin",
+    "tahun": 2026,
+    "kategori": "kebugaran"
+  },
+  {
+    "id": 3,
+    "judul": "Komunitas Sepeda & Cyclist",
+    "tahun": 2026,
+    "kategori": "sepeda"
+  }
+]
