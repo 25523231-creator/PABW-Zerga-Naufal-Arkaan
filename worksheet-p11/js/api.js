@@ -2,7 +2,12 @@ const ALAMAT = "data/proyek.json";
 export async function ambilProyek() {
   try {
     const respons = await fetch(ALAMAT);
-    console.log("Status:", respons.status, "OK:", respons.ok);
+    console.log(
+      "Status:",
+      respons.status,
+      "OK:",
+      respons.ok
+    );
     if (!respons.ok) {
       throw new Error("Status HTTP " + respons.status);
     }

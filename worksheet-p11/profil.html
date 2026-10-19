@@ -39,11 +39,13 @@
         </ul>
       </aside>
       <div class="konten-kanan">
+        <!-- Baris filter dengan tombol atur ulang baru sesuai Lembar D.2 -->
         <div id="filter" class="baris-filter">
           <button type="button" data-kategori="semua" class="aktif">Semua</button>
           <button type="button" data-kategori="lari">Lari</button>
           <button type="button" data-kategori="kebugaran">Kebugaran</button>
           <button type="button" data-kategori="sepeda">Sepeda</button>
+          <button type="button" id="atur-ulang">Atur ulang</button>
         </div>
         <div class="galeri">
           <section id="bagian-1" class="kartu sorotan">
@@ -78,7 +80,6 @@
               </table>
             </div>
             <h3 class="sub-judul-program">Daftar Program Olahraga</h3>
-            <!-- Wadah 3 Kartu Program JS -->
             <ul id="daftar" class="grid-program"></ul>
             <p id="kosong" class="pesan-kosong" hidden>Belum ada program olahraga.</p>
             <p id="muat" hidden>Memuat data olahraga...</p>
