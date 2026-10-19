@@ -4,66 +4,38 @@ const profil = {
   keahlian: ["HTML", "CSS", "JavaScript"],
 };
   
-const jumlahProyek = 2;
-
+const jumlahProyek = 3;
 let pilihanAktif = "semua";
 
 const kalimat = `Nama saya ${profil.nama}, dan saya belajar ${profil.keahlian.length} hal.`;
 console.log(kalimat);
 
-console.log(typeof profil.nama);
-console.log(typeof jumlahProyek);
-console.log(typeof profil.keahlian);
-console.log(typeof pilihanAktif);
-
-console.log(profil, jumlahProyek, pilihanAktif);
-
-// 1. Menyusun kalimat perkenalan dari satu object
 function buatPerkenalan({ nama, peran }) {
   return `${nama} — ${peran}`;
 }
 
-// 2. Merapikan daftar keahlian menjadi satu baris teks
 function formatKeahlian(daftar) {
   return daftar.join(" · ");
 }
 
 console.log(buatPerkenalan(profil));
 console.log(formatKeahlian(profil.keahlian));
-
-console.log(buatPerkenalan ({ nama: "Zerga", peran: "Mahasiswa"}));
-console.log(formatKeahlian (["HTML", "CSS"]));
-console.log(formatKeahlian (["JavaScript"]));
-
-const daftarProyek = [
-  { judul: "Halaman Profil", tahun: 2026, selesai: true },
-  { judul: "Katalog Produk", tahun: 2026, selesai: false },
+export const daftarProyek = [
+  {
+    judul: "Program Lari & Marathon 10K",
+    tahun: 2026,
+    kategori: "lari"
+  },
+  {
+    judul: "Gym rutin",
+    tahun: 2026,
+    kategori: "kebugaran"
+  },
+  {
+    judul: "Komunitas Sepeda",
+    tahun: 2026,
+    kategori: "sepeda"
+  }
 ];
-
 console.table(profil.keahlian);
 console.table(daftarProyek);
-
-const selesai = daftarProyek.filter((proyek) => proyek.selesai);
-console.table(selesai);
-
-const katalog = daftarProyek.find((proyek) => proyek.judul === "Katalog Produk");
-console.log(katalog);
-
-const judulProyek = daftarProyek.map((proyek) => proyek.judul);
-console.log(judulProyek);
-
-const urut = [...daftarProyek].sort((a, b) => a.judul.localeCompare(b.judul));
-console.table(urut);
-console.table(daftarProyek);
-
-console.log(profil.nama);
-
-const nilaiInput = "3";
-console.log(Number(nilaiInput) + 1);
-
-const elemen = document.querySelector("header");
-if (!elemen) {
-  console.error("elemen header tidak ditemukan") 
-}else {
-  console.log(elemen);
-}
