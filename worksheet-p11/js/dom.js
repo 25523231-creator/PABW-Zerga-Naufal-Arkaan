@@ -1,3 +1,9 @@
+  // js/dom.js: memakai isi data.js
+  import { profil, buatPerkenalan, formatKeahlian, saring } from './data.js';
+  //       nama di dalam { } sama persis dengan yang di-export;
+  //       jalur wajib diawali ./ dan diakhiri .js
+
+
 function buatKartu(proyek) {
   const li = document.createElement("li");
   li.className = "kartu-item";
