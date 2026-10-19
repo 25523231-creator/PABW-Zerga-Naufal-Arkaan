@@ -23,6 +23,7 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-2);
+  margin-bottom: 0.75rem;
 }
 
 label {
@@ -54,48 +55,7 @@ button {
   outline-offset: 2px;
 }
 
-input:user-invalid {
-  border-color: var(--color-danger);
-  border-width: 2px;
-}
-
-.pesan-galat { 
-  display: none; 
-  color: var(--color-danger); 
-  font-size: var(--text-sm); 
-}
-
-.form-kolom:has(input:user-invalid) .pesan-galat { 
-  display: block; 
-}
-
-.galeri {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-  gap: var(--space-4);
-}
-
-.galeri .kartu {
-  display: grid;
-  align-content: start;
-  min-height: 14rem;
-}
-
-.kartu__kaki {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--space-2);
-}
-
-.kartu__isi { 
-  min-width: 0; 
-}
-
-.kartu__judul { 
-  overflow-wrap: anywhere; 
-}
-
+/* Tata Letak Konten & Menu Samping */
 .isi {
   display: flex;
   gap: 2rem;
@@ -107,8 +67,10 @@ input:user-invalid {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+  min-width: 0;
 }
 
+/* Tombol Filter */
 .baris-filter {
   display: flex;
   gap: 0.75rem;
@@ -130,10 +92,58 @@ input:user-invalid {
   color: #ffffff;
 }
 
+/* Grid Galeri: Jadwal (kiri) & Form (kanan) */
 .galeri {
   display: grid;
   grid-template-columns: 1.8fr 1fr;
   gap: 1.25rem;
+  align-items: start;
+}
+
+.galeri .kartu {
+  display: grid;
+  align-content: start;
+  min-height: auto;
+}
+
+.kartu__isi { 
+  min-width: 0; 
+}
+
+/* Tabel Jadwal Mingguan */
+.table-wrap {
+  overflow-x: auto;
+  margin-top: 0.5rem;
+}
+
+.table-wrap table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table caption {
+  text-align: left;
+  font-size: 0.85rem;
+  color: #94a3b8;
+  margin-bottom: 0.5rem;
+}
+
+.table-wrap th,
+.table-wrap td {
+  padding: 0.55rem 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.table-wrap th {
+  color: #93c5fd;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.table-wrap td {
+  color: #f1f5f9;
+  font-size: 0.85rem;
 }
 
 .sub-judul-program {
@@ -143,6 +153,7 @@ input:user-invalid {
   font-weight: bold;
 }
 
+/* 3 Kolom Kartu Program Olahraga (Sesuai Gambar Target) */
 .grid-program {
   list-style: none;
   padding: 0;
@@ -171,6 +182,7 @@ input:user-invalid {
   color: #94a3b8;
 }
 
+/* Kartu Foto */
 .kartu-foto img {
   width: 100%;
   max-width: 200px;
@@ -178,9 +190,8 @@ input:user-invalid {
   display: block;
 }
 
-.pesan-error {
-  color: #f87171;
-  font-size: 0.75rem;
-  display: block;
-  margin-top: 0.25rem;
+.pesan-kosong {
+  color: #94a3b8;
+  font-style: italic;
+  padding: 0.5rem 0;
 }

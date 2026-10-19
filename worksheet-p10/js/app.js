@@ -17,16 +17,15 @@ const profilSalinan = JSON.parse(teksProfil);
 
 console.log("Hasil stringify:", teksProfil);
 console.log("Hasil parse:", profilSalinan);
-
 console.log(`${profil.nama} — ${profil.peran}`);
 console.log("Keahlian:", profil.keahlian.join(" · "));
 
+// Pengambilan data proyek secara asinkron dari JSON
 async function muat() {
   aturMemuat(true);
 
   try {
     const data = await ambilProyek();
-
     console.log("Data dari JSON:", data);
 
     render(data);
@@ -35,7 +34,6 @@ async function muat() {
     tampilkanGalat(
       "Data gagal dimuat. Periksa koneksi dan alamat JSON, lalu muat ulang halaman."
     );
-
     console.error("Kesalahan aplikasi:", galat.message);
   } finally {
     aturMemuat(false);
@@ -44,38 +42,45 @@ async function muat() {
 
 muat();
 
+// Menangani tombol Simpan form agar menambahkan baris ke tabel jadwal mingguan
 function inisialisasiFormOlahraga() {
   const form = document.querySelector(".form-olahraga");
   const tabel = document.querySelector("#jadwal-body");
 
-  if (!form || !tabel) {
-    console.error("Form atau tabel jadwal tidak ditemukan.");
-    return;
-  }
+  if (!form || !tabel) return;
 
   form.addEventListener("submit", (event) => {
-    event.preventDefault();
+    event.preventDefault(); // Mencegah reload halaman
 
-    const nama = document.querySelector("#nama-kolom").value.trim();
-    const waktu = document.querySelector("#waktu").value;
-    const durasi = document.querySelector("#Durasi").value.trim();
+    const inputNama = document.querySelector("#nama-kolom");
+    const inputWaktu = document.querySelector("#waktu");
+    const inputDurasi = document.querySelector("#Durasi");
+
+    const nama = inputNama ? inputNama.value.trim() : "";
+    const waktu = inputWaktu ? inputWaktu.value : "";
+    const durasi = inputDurasi ? inputDurasi.value.trim() : "";
 
     if (!nama || !waktu || !durasi) {
       alert("Semua kolom wajib diisi!");
       return;
     }
 
+    // Membuat baris baru untuk tabel jadwal
     const baris = document.createElement("tr");
 
-    [nama, waktu, durasi].forEach((nilai) => {
-      const kolom = document.createElement("td");
-      kolom.textContent = nilai;
-      baris.appendChild(kolom);
-    });
+    const tdNama = document.createElement("td");
+    tdNama.textContent = nama;
 
+    const tdWaktu = document.createElement("td");
+    tdWaktu.textContent = waktu;
+
+    const tdDurasi = document.createElement("td");
+    tdDurasi.textContent = durasi;
+
+    baris.append(tdNama, tdWaktu, tdDurasi);
     tabel.appendChild(baris);
-    form.reset();
 
+    form.reset();
     alert("Jadwal olahraga berhasil ditambahkan!");
   });
 }
