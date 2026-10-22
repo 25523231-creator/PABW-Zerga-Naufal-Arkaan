@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "nama": "Gym",
+    "waktu": "Pagi",
+    "durasi": "1 jam",
+    "kategori": "kebugaran"
+  },
+  {
+    "id": 2,
+    "nama": "Push up",
+    "waktu": "Siang",
+    "durasi": "30 menit",
+    "kategori": "kebugaran"
+  },
+  {
+    "id": 3,
+    "nama": "Lari",
+    "waktu": "Malam",
+    "durasi": "1 jam",
+    "kategori": "lari"
+  }
+]
